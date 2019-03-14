@@ -66,6 +66,14 @@ class Day extends Component {
       if (marking.selectedColor) {
         containerStyle.push({backgroundColor: marking.selectedColor});
       }
+      //Duclh -- add on 2019/03/14 --start
+      if (marking.borderWidth) {
+        containerStyle.push({borderWidth: marking.borderWidth});
+      }
+      if (marking.borderColor) {
+        containerStyle.push({borderColor: marking.borderColor});
+      }
+      //duclh -- add on 2019/03/14 --end
       dotStyle.push(this.style.selectedDot);
       textStyle.push(this.style.selectedText);
     } else if (isDisabled) {
